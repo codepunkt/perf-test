@@ -1,9 +1,9 @@
 # perf-test
 
-- linux/osx terminal: `time yarn` in toplevel directory
-- windows powershell: 
+- linux/osx terminal: `time yarn`
+- windows powershell: `Measure-Command -Expression { yarn }`
 
-to reset, run `yarn cache clean && yarn clean`
+to reset between measurements, run `yarn cache clean && yarn clean`
 
 ## measurements
 
