@@ -1,0 +1,23 @@
+{
+  "name": "root",
+  "private": true,
+  "engines": {
+    "node": ">= 12.21.0",
+    "yarn": ">= 1.22.10"
+  },
+  "scripts": {
+    "postinstall": "run-s install:apps install:services",
+    "install:apps": "cd ./apps && yarn install --network-timeout 1000000",
+    "install:services": "cd ./services && yarn install --network-timeout 1000000",
+    "clean": "node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\" && cd ./apps && yarn run clean && cd ../services && yarn run clean"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "cross-env": "7.0.3",
+    "husky": "4.3.8",
+    "lerna": "3.22.1",
+    "lint-staged": "11.0.0",
+    "npm-run-all": "4.1.5"
+  }
+}

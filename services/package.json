@@ -1,0 +1,37 @@
+{
+  "name": "@example/services",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "yarn run i:1 && yarn run i:2 && yarn run i:3 && yarn run i:4 && yarn run i:5 && yarn run i:6 && yarn run i:7 && yarn run i:8 && yarn run i:9 && yarn run i:10 && yarn run i:11 && yarn run i:12",
+    "i:1": "cd 1 && yarn",
+    "i:2": "cd 2 && yarn",
+    "i:3": "cd 3 && yarn",
+    "i:4": "cd 4 && yarn",
+    "i:5": "cd 5 && yarn",
+    "i:6": "cd 6 && yarn",
+    "i:7": "cd 7 && yarn",
+    "i:8": "cd 8 && yarn",
+    "i:9": "cd 9 && yarn",
+    "i:10": "cd 10 && yarn",
+    "i:11": "cd 11 && yarn",
+    "i:12": "cd 12 && yarn",
+    "clean": "node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\" && yarn run c:1 && yarn run c:2 && yarn run c:3 && yarn run c:4 && yarn run c:5 && yarn run c:6 && yarn run c:7 && yarn run c:8 && yarn run c:9 && yarn run c:10 && yarn run c:11 && yarn run c:12",
+    "c:1": "cd 1 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:2": "cd 2 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:3": "cd 3 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:4": "cd 4 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:5": "cd 5 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:6": "cd 6 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:7": "cd 7 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:8": "cd 8 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:9": "cd 9 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:10": "cd 10 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:11": "cd 11 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\"",
+    "c:12": "cd 12 && node -e \"fs.rmSync('node_modules', { force: true, recursive: true })\""
+  },
+  "devDependencies": {
+    "lerna": "3.22.1",
+    "npm-run-all": "4.1.5"
+  }
+}
